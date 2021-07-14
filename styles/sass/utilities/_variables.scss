@@ -7,10 +7,12 @@ $weights: (
 );
 
 $breakpoints: (
+  "xs": 0,
   "sm": 576px,
   "md": 768px,
-  "lg": 991px,
+  "lg": 992px,
   "xl": 1200px,
+  "xxl": 1400px,
 );
 
 $color-primary: #0d0d0d;
