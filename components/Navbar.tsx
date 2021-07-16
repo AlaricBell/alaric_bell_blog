@@ -10,14 +10,17 @@ const Navbar: React.FC = props => {
       </a></Link>
       <div className="nav-right">
         <ul className="nav-items">
-          <li className="nav-item">
-            <Link href="/blog"><a>Blog</a></Link>
+        <li className="nav-item">
+            <Link href="/blog"><a>Home</a></Link>
           </li>
           <li className="nav-item">
             <Link href="/blog"><a>Blog</a></Link>
           </li>
           <li className="nav-item">
-            <Link href="/blog"><a>Blog</a></Link>
+            <Link href="/blog"><a>About</a></Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/blog"><a>Contact</a></Link>
           </li>
         </ul>
       </div>

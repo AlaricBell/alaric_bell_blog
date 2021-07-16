@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
     faFacebook,
-    faInstagram,
-    faTwitter            
+    faTwitter,
+    faYoutube,
+    faGithub            
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer: React.FC = props => {
@@ -14,9 +15,10 @@ const Footer: React.FC = props => {
                         <p className="notify">Follow me</p>
                         <span className="line"></span>
                         <ul className="icons-social">
+                            <li><a href="#"><FontAwesomeIcon icon={faYoutube} style={{width: '30px', height: '30px'}}/></a></li>
                             <li><a href="#"><FontAwesomeIcon icon={faFacebook} style={{width: '30px', height: '30px'}}/></a></li>
-                            <li><a href="#"><FontAwesomeIcon icon={faInstagram} style={{width: '30px', height: '30px'}}/></a></li>
                             <li><a href="#"><FontAwesomeIcon icon={faTwitter} style={{width: '30px', height: '30px'}}/></a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faGithub} style={{width: '30px', height: '30px'}}/></a></li>
                         </ul>
                     </div>
                     <p className="copy">&copy; 2021 Alaric Bell. All rights reserved.</p>

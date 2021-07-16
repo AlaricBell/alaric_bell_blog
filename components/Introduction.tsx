@@ -63,7 +63,7 @@ export default class Introduction extends Component {
             <div className="introduction-animate">
             <p id="text-change"></p><span id="text-tab">|</span>
             </div>
-            <p>By Alaric Bell</p>
+            <p>With Alaric Bell</p>
           </div>
         </div>
       </section>

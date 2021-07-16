@@ -1,10 +1,17 @@
 .about {
   height: auto;
-  padding: 2.25rem 1.75rem;
   color: $color-font-light;
+  background: $color-secondary;
+  padding: 1.25rem 0;
 
   &-content {
     @include flexy($dir: column, $just: center, $align: center);
+    padding: 0;
+    text-align: center;
+
+    .btn-youtube {
+      margin-top: 1.25rem;
+    }
   }
 }
 
@@ -21,6 +28,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   &-content {
     @include flexy($dir: row, $just: flex-start, $align: center);
@@ -40,22 +48,32 @@
 
   &-text {
     @include flexy($dir: column, $just: center, $align: flex-start);
-    font-size: 72px;
+    font-size: 24px;
     font-weight: weight(bold);
     line-height: 1.25;
     color: $color-font-light;
   }
 
+  @include mq(md) {
+    &-text {
+      font-size: 72px;
+    }
+  }
+
   &-animate {
     @include flexy($dir: row, $just: flex-start, $align: center);
-    font-size: 72px;
     font-weight: weight(bold);
     line-height: 1.25;
-    color: $color-font-light;
+    color: $color-neon;
   }
 
   #text-tab {
     transition: opacity 0.5s ease-in-out;
     transform: scaleX(0.25);
   }
+}
+
+.content {
+  padding: 1.25rem;
+  background: $color-neon;
 }

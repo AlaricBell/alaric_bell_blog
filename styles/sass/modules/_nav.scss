@@ -14,9 +14,20 @@
     }
 
     &-item {
-      margin-left: 0.75rem;
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: weight(normal);
       text-transform: uppercase;
+      padding: 0.25rem 0.75rem;
+
+      // &:last-child {
+      //   border: 2px solid $color-font-light;
+      //   border-radius: 4px;
+
+      //   &:hover {
+      //     border: 2px solid $color-neon;
+      //     color: $color-neon;
+      //   }
+      // }
     }
   }
 

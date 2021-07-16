@@ -1,0 +1,11 @@
+.card {
+  @include flexy($dir: column, $just: center, $align: center);
+  color: $color-font-light;
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

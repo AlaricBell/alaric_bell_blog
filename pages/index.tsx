@@ -1,10 +1,15 @@
 import Link from 'next/link'
 import { GetStaticProps} from 'next'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+    faDiscord           
+} from "@fortawesome/free-brands-svg-icons";
 
 import {getPosts, getTags} from '../lib/postHandler'
 import Layout from '../components/layout/Layout-main'
 import Introduction from '../components/Introduction'
+import About from '../components/About'
 
 type Post = {
 
@@ -29,26 +34,64 @@ export default function Home(props) {
     <Layout>
       <main>
         <Introduction />
+        <About />
 
-        <div className="about container-fluid" style={{'margin-bottom': '125px'}}>
+        <div className="container-fluid content" style={{'margin-bottom': '125px'}}>
           <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 about-content">
-                <img src="/img/ab-logo.png" alt="logo image" className="logo-lg"/>
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card">
+                  <FontAwesomeIcon icon={faDiscord} style={{width: '65px', height: '65px'}}/>
+                  <h3>Discrod</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis incidunt nam veniam saepe dolor vel minima ducimus laboriosam dolore</p>
+                  <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-content">Alaric Bell's Channel</a>
+                </div>
               </div>
-              <div className="col-12 col-md-6 about-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique</p>
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card">
+                  <FontAwesomeIcon icon={faDiscord} style={{width: '65px', height: '65px'}}/>
+                  <h3>Discord</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis incidunt nam veniam saepe dolor vel minima ducimus laboriosam dolore</p>
+                  <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-content">Alaric Bell's Channel</a>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card">
+                  <FontAwesomeIcon icon={faDiscord} style={{width: '65px', height: '65px'}}/>
+                  <h3>Discord</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis incidunt nam veniam saepe dolor vel minima ducimus laboriosam dolore</p>
+                  <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-content">Alaric Bell's Channel</a>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card">
+                  <FontAwesomeIcon icon={faDiscord} style={{width: '65px', height: '65px'}}/>
+                  <h3>Discord</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis incidunt nam veniam saepe dolor vel minima ducimus laboriosam dolore</p>
+                  <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-content">Alaric Bell's Channel</a>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card">
+                  <FontAwesomeIcon icon={faDiscord} style={{width: '65px', height: '65px'}}/>
+                  <h3>Discord</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis incidunt nam veniam saepe dolor vel minima ducimus laboriosam dolore</p>
+                  <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-content">Alaric Bell's Channel</a>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card">
+                  <FontAwesomeIcon icon={faDiscord} style={{width: '65px', height: '65px'}}/>
+                  <h3>Discord</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis incidunt nam veniam saepe dolor vel minima ducimus laboriosam dolore</p>
+                  <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-content">Alaric Bell's Channel</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="container">
-          <div className="row">
-
-          </div>
           {/* <ul style={{background: 'red'}}>
             {posts.map((post, index) => {
               return (

@@ -1,0 +1,25 @@
+.btn {
+  padding: 0.45rem 0.75rem;
+  color: $color-font-light;
+  font-weight: weight(bold);
+  border-radius: 6px;
+
+  &-youtube {
+    background-color: $color-neon;
+
+    &:hover {
+      background-color: lighten($color-neon, 10%);
+      color: $color-font-light;
+    }
+  }
+
+  &-content {
+    margin-top: 0.75rem;
+    background-color: $color-font-light;
+    color: $color-neon;
+
+    &:hover {
+      color: $color-neon;
+    }
+  }
+}
