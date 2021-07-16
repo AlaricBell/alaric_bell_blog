@@ -1,0 +1,61 @@
+.about {
+  height: auto;
+  padding: 2.25rem 1.75rem;
+  color: $color-font-light;
+
+  &-content {
+    @include flexy($dir: column, $just: center, $align: center);
+  }
+}
+
+.introduction {
+  @include flexy($dir: row, $just: center, $align: center);
+  height: 100vh;
+  padding: 0 !important;
+  overflow: hidden;
+  background: linear-gradient(
+      rgba($color-primary, 0.9),
+      rgba($color-primary, 0.8)
+    ),
+    url("/img/bg-main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &-content {
+    @include flexy($dir: row, $just: flex-start, $align: center);
+    overflow: hidden;
+    border-left: 8px solid $color-neon;
+
+    .line {
+      display: block;
+      width: 6px;
+      min-height: 114px;
+      height: 100%;
+      background: $color-neon;
+      margin: 0 0.75rem 0 0;
+      padding: 0;
+    }
+  }
+
+  &-text {
+    @include flexy($dir: column, $just: center, $align: flex-start);
+    font-size: 72px;
+    font-weight: weight(bold);
+    line-height: 1.25;
+    color: $color-font-light;
+  }
+
+  &-animate {
+    @include flexy($dir: row, $just: flex-start, $align: center);
+    font-size: 72px;
+    font-weight: weight(bold);
+    line-height: 1.25;
+    color: $color-font-light;
+  }
+
+  #text-tab {
+    transition: opacity 0.5s ease-in-out;
+    transform: scaleX(0.25);
+  }
+}

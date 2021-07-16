@@ -21,11 +21,19 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+main,
+header,
+footer {
+  width: 100%;
+}
+
 a {
+  color: $color-font-light;
   cursor: pointer;
   text-decoration: none;
   &:hover {
     text-decoration: none;
+    color: $color-neon;
   }
 }
 

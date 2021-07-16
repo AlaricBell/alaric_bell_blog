@@ -1,9 +1,12 @@
 .navbar {
   @include flexy($dir: row, $just: space-between, $align: center);
   height: 60px;
-  padding: 0.75rem 1.25rem;
-  position: relative;
+  width: 100%;
+  padding: 0.75rem 1.45rem;
+  position: fixed;
+  z-index: 1000;
   margin-bottom: 2.25rem;
+  background: rgba($color-secondary, 0.8);
 
   .nav {
     &-items {
@@ -13,19 +16,16 @@
     &-item {
       margin-left: 0.75rem;
       font-size: 16px;
+      text-transform: uppercase;
     }
-  }
-
-  a {
-    color: #fff;
   }
 
   .brand {
     @include flexy($dir: row, $just: flex-start, $align: center);
-    .logo {
-      max-width: 45px;
-      max-height: 45px;
-      margin-right: 6px;
+
+    h2 {
+      margin-left: 6px;
+      color: $color-font-light;
     }
   }
 
@@ -38,9 +38,9 @@
     height: 4px;
     background: linear-gradient(
       130deg,
-      #ff994d,
-      #fff447 41.07%,
-      #b3ffff 76.05%
+      #fff447,
+      #f28705 41.07%,
+      #ff1926 76.05%
     );
   }
 }

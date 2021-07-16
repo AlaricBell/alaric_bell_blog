@@ -1,0 +1,65 @@
+footer {
+  @include flexy($dir: row, $just: center, $align: center);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 125px;
+  padding: 1.25rem 0.75rem;
+  color: $color-font-light;
+  background: $color-primary;
+}
+
+.footer {
+  &-items {
+    @include flexy($dir: column, $just: center, $align: center);
+
+    .copy {
+      font-size: 12px;
+    }
+
+    @include mq(md) {
+      .copy {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include mq(md) {
+    &-items {
+      @include flexy($dir: row-reverse, $just: space-between, $align: center);
+    }
+  }
+
+  &-social {
+    @include flexy($dir: column, $just: center, $align: flex-start);
+    position: relative;
+
+    .notify {
+      text-transform: uppercase;
+      font-weight: weight(bold);
+      font-size: 18px;
+    }
+
+    .line {
+      margin-top: 0.75rem;
+      height: 6px;
+      width: 24px;
+      background: $color-neon;
+    }
+
+    ul {
+      margin-top: 0.75rem;
+
+      li {
+        a {
+          color: $color-font-light;
+
+          &:hover {
+            color: $color-neon;
+          }
+        }
+      }
+    }
+  }
+}

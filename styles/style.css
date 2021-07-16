@@ -20,12 +20,20 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+main,
+header,
+footer {
+  width: 100%;
+}
+
 a {
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
+  color: #f29f05;
 }
 
 ul {
@@ -66,9 +74,12 @@ input:hover, input:active, input:focus {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 0.75rem 1.25rem;
-  position: relative;
+  width: 100%;
+  padding: 0.75rem 1.45rem;
+  position: fixed;
+  z-index: 1000;
   margin-bottom: 2.25rem;
+  background: rgba(32, 32, 32, 0.8);
 }
 .navbar .nav-items {
   display: flex;
@@ -79,9 +90,7 @@ input:hover, input:active, input:focus {
 .navbar .nav-item {
   margin-left: 0.75rem;
   font-size: 16px;
-}
-.navbar a {
-  color: #fff;
+  text-transform: uppercase;
 }
 .navbar .brand {
   display: flex;
@@ -89,10 +98,9 @@ input:hover, input:active, input:focus {
   justify-content: flex-start;
   align-items: center;
 }
-.navbar .brand .logo {
-  max-width: 45px;
-  max-height: 45px;
-  margin-right: 6px;
+.navbar .brand h2 {
+  margin-left: 6px;
+  color: #fff;
 }
 .navbar::after {
   content: "";
@@ -101,7 +109,94 @@ input:hover, input:active, input:focus {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(130deg, #ff994d, #fff447 41.07%, #b3ffff 76.05%);
+  background: linear-gradient(130deg, #fff447, #f28705 41.07%, #ff1926 76.05%);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 125px;
+  padding: 1.25rem 0.75rem;
+  color: #fff;
+  background: #0d0d0d;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-items .copy {
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer-items .copy {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-items {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.footer-social .notify {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+}
+.footer-social .line {
+  margin-top: 0.75rem;
+  height: 6px;
+  width: 24px;
+  background: #f29f05;
+}
+.footer-social ul {
+  margin-top: 0.75rem;
+}
+.footer-social ul li a {
+  color: #fff;
+}
+.footer-social ul li a:hover {
+  color: #f29f05;
+}
+
+.logo {
+  max-width: 35px;
+  max-height: 35px;
+}
+.logo-lg {
+  max-width: 55%;
+  max-height: 55%;
+}
+
+.icons-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.icons-social li {
+  margin-right: 1.25rem;
+}
+.icons-social li:last-child {
+  margin: 0;
 }
 
 .container,
@@ -136,6 +231,73 @@ input:hover, input:active, input:focus {
     max-width: 1140px;
   }
 }
+.about {
+  height: auto;
+  padding: 2.25rem 1.75rem;
+  color: #fff;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 !important;
+  overflow: hidden;
+  background: linear-gradient(rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.8)), url("/img/bg-main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.introduction-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-left: 8px solid #f29f05;
+}
+.introduction-content .line {
+  display: block;
+  width: 6px;
+  min-height: 114px;
+  height: 100%;
+  background: #f29f05;
+  margin: 0 0.75rem 0 0;
+  padding: 0;
+}
+.introduction-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+}
+.introduction-animate {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+}
+.introduction #text-tab {
+  transition: opacity 0.5s ease-in-out;
+  transform: scaleX(0.25);
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
