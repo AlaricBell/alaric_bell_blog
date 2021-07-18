@@ -34,3 +34,9 @@
     max-width: 1140px;
   }
 }
+
+.container {
+  &-page {
+    padding-top: 60px;
+  }
+}

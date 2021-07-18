@@ -13,6 +13,27 @@
     }
   }
 
+  &-youtube {
+    background-color: #c9322c;
+
+    &:hover {
+      background-color: lighten(#c9322c, 10%);
+      color: $color-font-light;
+    }
+
+    a {
+      @include flexy($dir: row, $just: center, $align: center);
+
+      svg {
+        margin-left: 0.45rem;
+      }
+    }
+
+    a:hover {
+      color: $color-font-light;
+    }
+  }
+
   &-content {
     margin-top: 0.75rem;
     background-color: $color-font-light;

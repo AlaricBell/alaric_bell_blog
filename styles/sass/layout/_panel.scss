@@ -13,10 +13,6 @@
       margin-top: 1.25rem;
     }
   }
-
-  // .container {
-  //   @extend %py-panel;
-  // }
 }
 
 .introduction {
@@ -74,6 +70,7 @@
 
 .donation {
   @extend %py-panel;
+  margin-bottom: 125px;
   color: $color-font-light;
   background: linear-gradient(
       rgba($color-primary, 0.9),

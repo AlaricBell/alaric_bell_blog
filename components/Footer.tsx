@@ -15,10 +15,10 @@ const Footer: React.FC = props => {
                         <p className="notify">Follow me</p>
                         <span className="line"></span>
                         <ul className="icons-social">
-                            <li><a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ"><FontAwesomeIcon icon={faYoutube} style={{width: '30px', height: '30px'}}/></a></li>
-                            <li><a href="https://www.facebook.com/Alaric-Bell-108850441481263"><FontAwesomeIcon icon={faFacebook} style={{width: '30px', height: '30px'}}/></a></li>
-                            <li><a href="https://twitter.com/AlaricBell"><FontAwesomeIcon icon={faTwitter} style={{width: '30px', height: '30px'}}/></a></li>
-                            <li><a href="https://github.com/AlaricBell"><FontAwesomeIcon icon={faGithub} style={{width: '30px', height: '30px'}}/></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ"><FontAwesomeIcon icon={faYoutube} style={{width: '30px', height: '30px'}}/></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/Alaric-Bell-108850441481263"><FontAwesomeIcon icon={faFacebook} style={{width: '30px', height: '30px'}}/></a></li>
+                            <li><a target="_blank" href="https://twitter.com/AlaricBell"><FontAwesomeIcon icon={faTwitter} style={{width: '30px', height: '30px'}}/></a></li>
+                            <li><a target="_blank" href="https://github.com/AlaricBell"><FontAwesomeIcon icon={faGithub} style={{width: '30px', height: '30px'}}/></a></li>
                         </ul>
                     </div>
                     <p className="copy">&copy; 2021 Alaric Bell. All rights reserved.</p>
