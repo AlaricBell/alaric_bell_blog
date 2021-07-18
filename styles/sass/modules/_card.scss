@@ -1,11 +1,49 @@
 .card {
-  @include flexy($dir: column, $just: center, $align: center);
+  @include flexy($dir: column, $just: flex-start, $align: center);
+  height: 100%;
   color: $color-font-light;
   border-radius: 6px;
-  padding: 0.75rem;
+  padding: 1.25rem;
   text-align: center;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  &-title {
+    margin-top: 0.75rem;
+  }
+
+  p {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  a {
+    margin-top: auto;
+  }
+
+  &-post {
+    background: $color-font-light;
+    color: $color-primary;
+
+    .tags {
+      width: 100%;
+      @include flexy($dir: row, $just: flex-start, $align: center, $wrap: wrap);
+
+      small {
+        padding: 0.25rem 0.75rem;
+        color: $color-font-light;
+        background: $color-neon;
+        border-radius: 4px;
+        margin: 4px;
+        font-size: 12px;
+        font-weight: weight(thin);
+      }
+    }
+
+    .btn-neon {
+      width: 100%;
+    }
   }
 }

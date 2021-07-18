@@ -1,5 +1,5 @@
 .row {
-  @include flexy($wrap: wrap, $just: center);
+  @include flexy($dir: row, $wrap: wrap, $just: center);
   margin-right: -15px;
   margin-left: -15px;
   .col {

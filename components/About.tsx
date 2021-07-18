@@ -1,15 +1,15 @@
 const About: React.FC = props => {
   return (
     <section className="about container-fluid">
-    <div className="row">
-      <div className="col-2 about-content">
+    <div className="row m-title">
+      <div className="col-2 header-container">
         <span className="header-line"></span>
       </div>
-      <div className="col-8 header-title about-content">
+      <div className="col-8 header-title header-container">
         <h2>Alaric Bell</h2>
         
       </div>
-      <div className="col-2 about-content">
+      <div className="col-2 header-container">
         <span className="header-line"></span>
       </div>
     </div>
@@ -23,7 +23,7 @@ const About: React.FC = props => {
           <p>At the beginning of my journey I was amazed how efficiently programming can be learned 
           with a trustworthy instructor. Simply being online, researching and practicing made me a better programmer every single day.</p>
           <p>As a freelancer webdeveloper I am doing my best to provide the highest quality content for everyone who is willing to learn webdevelopment.</p>
-          <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-youtube">Alaric Bell's Channel</a>
+          <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-neon">Alaric Bell's Channel</a>
         </div>
       </div>
     </div>

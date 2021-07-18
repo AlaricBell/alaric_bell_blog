@@ -1,25 +1,29 @@
 .about {
+  @extend %py-panel;
   height: auto;
   color: $color-font-light;
   background: $color-secondary;
-  padding: 1.25rem 0;
 
   &-content {
     @include flexy($dir: column, $just: center, $align: center);
     padding: 0;
     text-align: center;
 
-    .btn-youtube {
+    .btn-neon {
       margin-top: 1.25rem;
     }
   }
+
+  // .container {
+  //   @extend %py-panel;
+  // }
 }
 
 .introduction {
+  @extend %py-panel;
+  width: 100%;
   @include flexy($dir: row, $just: center, $align: center);
   height: 100vh;
-  padding: 0 !important;
-  overflow: hidden;
   background: linear-gradient(
       rgba($color-primary, 0.9),
       rgba($color-primary, 0.8)
@@ -34,16 +38,6 @@
     @include flexy($dir: row, $just: flex-start, $align: center);
     overflow: hidden;
     border-left: 8px solid $color-neon;
-
-    .line {
-      display: block;
-      width: 6px;
-      min-height: 114px;
-      height: 100%;
-      background: $color-neon;
-      margin: 0 0.75rem 0 0;
-      padding: 0;
-    }
   }
 
   &-text {
@@ -74,6 +68,63 @@
 }
 
 .content {
-  padding: 1.25rem;
+  @extend %py-panel;
   background: $color-neon;
+}
+
+.donation {
+  @extend %py-panel;
+  color: $color-font-light;
+  background: linear-gradient(
+      rgba($color-primary, 0.9),
+      rgba($color-primary, 0.8)
+    ),
+    url("/img/bg-main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  &-content {
+    @include flexy($dir: column, $just: center, $align: center);
+    text-align: center;
+    line-height: 1.75;
+
+    p {
+      @extend %py-panel;
+    }
+  }
+
+  svg {
+    color: $color-font-light;
+    margin-right: 6px;
+  }
+
+  a {
+    @include flexy($dir: row, $just: center, $align: center);
+  }
+}
+
+.post {
+  &-top {
+    @extend %py-panel;
+  }
+
+  &-content {
+    text-align: center;
+    padding: 1.75rem 0.75rem;
+  }
+
+  &-info {
+    @include flexy($dir: row, $just: space-between, $align: center);
+    @extend %my-panel;
+    width: 100%;
+
+    .published {
+      margin-left: auto;
+    }
+  }
+
+  &-author {
+    @include flexy($dir: row, $just: flex-start, $align: center);
+  }
 }

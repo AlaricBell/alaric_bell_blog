@@ -14,4 +14,41 @@
     max-height: 60%;
     border-radius: 50%;
   }
+
+  &-author {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.45rem;
+  }
+
+  &-post {
+    width: 175px;
+    height: 175px;
+    margin-bottom: 1.75rem;
+  }
+
+  @include mq(sm) {
+    &-post {
+      width: 265px;
+      height: 265px;
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  @include mq(md) {
+    &-post {
+      width: 175px;
+      height: 175px;
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  @include mq(lg) {
+    &-post {
+      width: 265px;
+      height: 265px;
+      margin-bottom: 1.75rem;
+    }
+  }
 }
