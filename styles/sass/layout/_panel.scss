@@ -15,6 +15,64 @@
   }
 }
 
+.contact {
+  @extend %py-panel;
+  min-height: calc(100vh - 185px);
+  height: auto;
+  background: linear-gradient(
+      rgba($color-primary, 0.9),
+      rgba($color-primary, 0.8)
+    ),
+    url("/img/bg-main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $color-font-light;
+
+  &-list {
+    @include flexy($dir: column, $just: center, $align: flex-start);
+    &-item {
+      @include flexy($dir: row, $just: flex-start, $align: center);
+      font-size: 16px;
+      font-weight: weight(thin);
+      svg {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  &-text {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: rgba($color-font-light, 0.7);
+  }
+
+  &-information {
+    @include flexy($dir: column, $just: center, $align: flex-start);
+    &-item {
+      @include flexy($dir: column, $just: flex-start, $align: center);
+      margin-bottom: 1.25rem;
+
+      h3 {
+        text-transform: uppercase;
+      }
+
+      .discord {
+        @include flexy($dir: column, $just: flex-start, $align: center);
+      }
+    }
+
+    @include mq(md) {
+      &-item {
+        @include flexy($dir: column, $just: flex-start, $align: flex-start);
+        padding-right: 1.25rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+}
+
 .introduction {
   @extend %py-panel;
   width: 100%;
@@ -70,7 +128,6 @@
 
 .donation {
   @extend %py-panel;
-  margin-bottom: 125px;
   color: $color-font-light;
   background: linear-gradient(
       rgba($color-primary, 0.9),

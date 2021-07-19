@@ -3,14 +3,14 @@
   margin-bottom: 0.75rem;
 }
 
-.post-top, .donation-content p, .donation, .content, .introduction, .about {
+.post-top, .donation-content p, .donation, .content, .introduction, .contact, .about {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
 
 .post-info {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 * {
@@ -38,6 +38,10 @@ main,
 header,
 footer {
   width: 100%;
+}
+
+main {
+  padding-bottom: 125px;
 }
 
 a {
@@ -199,7 +203,7 @@ input:hover, input:active, input:focus {
   padding-bottom: 1.25rem;
 }
 .navbar .nav-collapsed .nav-items .nav-item {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   padding: 0.75rem 0.75rem;
@@ -380,6 +384,37 @@ footer {
 .card a {
   margin-top: auto;
 }
+.card-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1.75rem;
+  background: transparent;
+  color: #0d0d0d;
+}
+.card-email-icon {
+  background-color: #ebebeb;
+  padding: 0.35rem;
+  height: 100%;
+  border-right: 2px solid #0d0d0d;
+}
+.card-email-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+  padding: 0.35rem;
+  height: 100%;
+}
+.card-email-information .email {
+  background: #fff;
+  padding: 0.35rem 0.75rem;
+  border-radius: 16px;
+}
 .card-post {
   background: #fff;
   color: #0d0d0d;
@@ -457,6 +492,11 @@ footer {
 }
 .btn-content:hover {
   color: #f29f05;
+}
+
+.discord .btn-neon {
+  width: 100%;
+  text-align: center;
 }
 
 .row {
@@ -890,6 +930,71 @@ footer {
   margin-top: 1.25rem;
 }
 
+.contact {
+  min-height: calc(100vh - 185px);
+  height: auto;
+  background: linear-gradient(rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.8)), url("/img/bg-main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 100;
+}
+.contact-list-item svg {
+  margin-right: 6px;
+}
+.contact-text {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-information-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.contact-information-item h3 {
+  text-transform: uppercase;
+}
+.contact-information-item .discord {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-information-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
 .introduction {
   width: 100%;
   display: flex;
@@ -945,7 +1050,6 @@ footer {
 }
 
 .donation {
-  margin-bottom: 125px;
   color: #fff;
   background: linear-gradient(rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.8)), url("/img/bg-main.jpg");
   background-position: center;

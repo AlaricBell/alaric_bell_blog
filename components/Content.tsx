@@ -46,16 +46,16 @@ const Content: React.FC = props => {
         </div>
         <div className="col-12 col-md-6 col-lg-4">
           <div className="card">
-            <FontAwesomeIcon icon={faBriefcase} style={{width: '65px', height: '65px'}}/>
-            <h3 className="card-title">Work</h3>
-            <p>If you want your website to be created by Alaric Bell, contact me via email with pricing and terms</p>
+            <FontAwesomeIcon icon={faUserFriends} style={{width: '65px', height: '65px'}}/>
+            <h3 className="card-title">Sponsorship</h3>
+            <p>Alaric Bell channel is continuosly accepting sponsorship, contact me via email with pricing and terms</p>
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-4">
           <div className="card">
-            <FontAwesomeIcon icon={faUserFriends} style={{width: '65px', height: '65px'}}/>
-            <h3 className="card-title">Sponsorship</h3>
-            <p>Alaric Bell channel is continuosly accepting sponsorship, contact me via email with pricing and terms</p>
+            <FontAwesomeIcon icon={faBriefcase} style={{width: '65px', height: '65px'}}/>
+            <h3 className="card-title">Work</h3>
+            <p>If you want your website to be created by Alaric Bell, contact me via email with pricing and terms</p>
           </div>
         </div>
       </div>

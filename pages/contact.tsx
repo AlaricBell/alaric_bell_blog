@@ -11,8 +11,14 @@ import TopPosts from '../components/posts/TopPosts'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faPatreon
+  faDiscord,
+  faFacebook,
+    faGithub,
+    faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope
+} from "@fortawesome/free-regular-svg-icons";
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
   const posts = await getTopPosts();
@@ -30,8 +36,7 @@ export default function Contact(props) {
   return (
     <Layout>
       <main className="container-page">
-
-      <section className="about container-fluid">
+      <section className="contact container-fluid">
         <div className="row m-title">
           <div className="col-2 header-container">
             <span className="header-line"></span>
@@ -47,14 +52,36 @@ export default function Contact(props) {
 
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 about-content">
-              <img src="/img/profile.jpg" alt="Profile image of the creator" className="img-profile"/>
+            <div className="col-12 contact-text">
+              <p>Follow my social media and feel free to hit me up in dm if you have any question in mind</p>
             </div>
-            <div className="col-12 col-md-6 about-content">
-              <p>At the beginning of my journey I was amazed how efficiently programming can be learned 
-              with a trustworthy instructor. Simply being online, researching and practicing made me a better programmer every single day.</p>
-              <p>As a freelancer webdeveloper I am doing my best to provide the highest quality content for everyone who is willing to learn webdevelopment.</p>
-              <a href="https://www.youtube.com/channel/UC-VCC0jmo5Snw276aWRshiQ" target="_blank" className="btn btn-neon">Alaric Bell's Channel</a>
+            <div className="col-12 col-lg-8 contact-information">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-12 col-md-6 contact-information-item">
+                    <h3>Social accounts</h3>
+                    <ul className="contact-list">
+                      <li className="contact-list-item"><Link href="https://twitter.com/AlaricBell"><a ><FontAwesomeIcon icon={faTwitter} style={{width: '16px', height: '16px'}}/>@AlaricBell</a></Link></li>
+                      <li className="contact-list-item"><Link href="https://www.facebook.com/Alaric-Bell-108850441481263"><a ><FontAwesomeIcon icon={faFacebook} style={{width: '16px', height: '16px'}}/>Alaric Bell</a></Link></li>
+                      <li className="contact-list-item"><Link href="https://github.com/AlaricBell"><a ><FontAwesomeIcon icon={faGithub} style={{width: '16px', height: '16px'}}/>AlaricBell</a></Link></li>
+                    </ul>
+                  </div>
+                  <div className="col-12 col-md-6 contact-information-item">
+                    <h3>Email</h3>
+                    <ul className="contact-list">
+                      <li className="contact-list-item"><FontAwesomeIcon icon={faEnvelope} style={{width: '16px', height: '16px'}}/>alaric.bell@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div className="col-12">
+                    <div className="contact-information-item">
+                      <div className="discord">
+                        <h3>Join our Discord channel</h3>
+                        <Link href="https://discord.gg/FAGXqqn9"><a target="_blank" className="btn btn-neon"><FontAwesomeIcon icon={faDiscord} style={{width: '16px', height: '16px'}}/>Discord</a></Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
